@@ -74,8 +74,6 @@ The Spotify API is built with modern web technologies to ensure efficiency and s
 
 - **Node.js** - JavaScript runtime for backend execution.
 - **Express.js** - Lightweight web framework for handling API requests.
-- **MongoDB** - NoSQL database optimized for handling music data.
-- **Mongoose** - ODM (Object-Document Mapping) for managing MongoDB interactions.
 - **JWT (JSON Web Token)** - Secure authentication mechanism for user sessions.
 - **Axios** - HTTP client for making requests to external APIs.
 - **Bcrypt** - Hashing library for password encryption.
@@ -104,7 +102,6 @@ The following dependencies are essential for the API’s functionality:
 | express      | ^4.21.2 | [npm](https://www.npmjs.com/package/express)      |
 | jsonwebtoken | ^9.0.2  | [npm](https://www.npmjs.com/package/jsonwebtoken) |
 | mysql2       | ^3.12.0 | [npm](https://www.npmjs.com/package/mysql2)       |
-| mongoose     | ^7.0.0  | [npm](https://www.npmjs.com/package/mongoose)     |
 
 ## 7. Security Measures
 
