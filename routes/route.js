@@ -17,16 +17,16 @@ router.put('/user/:id',userController.updateUser);
 router.delete('/user/:id', userController.deleteUser);
 
 router.post('/song',songController.createSong);
-router.get('/song',songController.getAllSong);
+router.get('/song',userAuth,songController.getAllSong);
 router.put('/song/:song_id',songController.updateSong);
 router.delete('/song/:song_id',songController.deleteSong);
 
 router.post('/album',albumController.createAlbum);
-router.get('/album',albumController.getAllAlbum);
+router.get('/album',userAuth,albumController.getAllAlbum);
 router.delete('/album/:album_id',albumController.deleteAlbum);
 
 router.post('/artist',artistController.createArtist);
-router.get('/artist',artistController.getAllArtist);
+router.get('/artist',userAuth,artistController.getAllArtist);
 router.put('/artist/:artist_id',artistController.updateArtist);
 router.delete('/artist/:artist_id',artistController.deleteArtist);
 
@@ -34,7 +34,7 @@ router.post('/genre',genreController.createGenre);
 router.delete('/genre/:genre_id',genreController.deleteGenre);
 
 router.post('/playlist',playlistController.createPlaylist);
-router.get('/playlist',playlistController.getAllPlaylist);
+router.get('/playlist',userAuth,playlistController.getAllPlaylist);
 router.delete('/playlist/:playlist_id',playlistController.deletePlaylist);
 
 module.exports = router

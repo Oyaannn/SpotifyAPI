@@ -2,7 +2,8 @@ const SECRET_KEY = 'dskjdlzjdsjk279usand09wwqmd'
 const jwt = require('jsonwebtoken')
 
 const userAuth = (req,res,next) => {
-    const token = req.header("Authorization")
+    const authHeader = req.headers["authorization"];
+    const token = authHeader && authHeader.split(" ")[1];
     if(!token){
         res.status(400).json({message:"Access Denied"})
     }
